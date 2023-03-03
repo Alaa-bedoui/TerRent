@@ -2,6 +2,20 @@
   "expo": {
     "name": "TeRent",
     "slug": "TeRent",
+    "plugins": [
+      [
+        "react-native-fbsdk-next",
+        {
+          "appID": "742148844046204",
+          "clientToken": "ca034d468536acc7b0f2b46914c92e0d",
+          "displayName": "TerRent",
+          "scheme": "fb48127127xxxxxxxx"
+        }
+      ]
+    ],
+    "runtimeVersion": {
+      "policy": "sdkVersion"
+    },
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -11,6 +25,8 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
+    "sourceExts": [ "js", "json", "ts", "tsx", "jsx", "vue"],
+
     "assetBundlePatterns": [
       "**/*"
     ],

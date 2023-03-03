@@ -6,7 +6,6 @@ const config=require('../orm/config.js')
 const sequelize= new Sequelize(config.DATABASE,config.USER,config.PASSWORD,{
     HOST:'localhost',
     dialect:'mysql'
-
 }); 
 
 
@@ -81,3 +80,5 @@ db.Event.belongsTo(db.Owner,{
 sequelize.authenticate()
 .then(()=> console.log('database connected'))
 .catch(err=>console.log(err))
+
+module.exports= db;
